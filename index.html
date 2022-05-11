@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univercity website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="#"> <img src="./assets/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's biggest univercity</h1>
+            <p>Maing website is now one of the easiest things in the wolrd. You just need to learn HTML, CSS, <br> JavaScrip and you are good to go.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est sunt nemo iusto excepturi officia necessitatibus porro exercitationem nisi totam aut pariatur soluta suscipit, perspiciatis eum consectetur unde eos dolore ab!</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla enim corrupti deserunt odit a dolor quam, mollitia maiores magni cumque labore quia quas, doloribus eius dolorem magnam libero rerum?</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla enim corrupti deserunt odit a dolor quam, mollitia maiores magni cumque labore quia quas, doloribus eius dolorem magnam libero rerum?</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla enim corrupti deserunt odit a dolor quam, mollitia maiores magni cumque labore quia quas, doloribus eius dolorem magnam libero rerum?</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }  
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        } 
+    </script>
+</body>
+</html>
